@@ -1,31 +1,3 @@
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-@Nissrine1
-RyuzakiiL23 /
-alx-low_level_programming
-Public
-
-Fork your own copy of RyuzakiiL23/alx-low_level_programming
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-
-    Insights
-
-alx-low_level_programming/0x0A-argc_argv/4-add.c
-@RyuzakiiL23
-RyuzakiiL23 add
-Latest commit 149dcd4 Apr 9, 2023
-History
-1 contributor
-46 lines (41 sloc) 599 Bytes
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
