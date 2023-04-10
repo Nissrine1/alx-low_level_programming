@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 /**
-* main - Entry point, prints the number of arguments.
-* @argc: arguments count
-* @argv: arguments vector
-* Return: always 0
-*/
+ *main - Entry point, print all arguments that receive.
+ *@argc: arguments count
+ *@argv: arguments victor
+ *Return: always 0
+ */
 
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
-printf("%d\n", argc - 1);
-return (0);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+	return (0);
 }
