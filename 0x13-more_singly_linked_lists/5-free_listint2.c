@@ -1,18 +1,27 @@
 #include "lists.h"
+
 /**
-* free_listint2 - free listint.
-* @head: node's head.
-* Return: return void.
+* free_listint2 - frees memory
+*
+* @head: doule pointer
 */
 
 void free_listint2(listint_t **head)
 {
-	listint_t *tmp;
+	listint_t *curr;
+	listint_t *aux;
 
-	while (*head != NULL)
+	if (head == NULL)
 	{
-		tmp = *head;
-		*head = (*head)->next;
-		free(tmp);
+	return;
 	}
+	curr = *head;
+
+	while (curr != NULL)
+	{
+		aux = curr;
+		curr = curr->next;
+		free(aux);
+	}
+	*head = NULL;
 }
